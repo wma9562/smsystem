@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SRF School Management System</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/calender.css">
+
+    <!-- Fontawsome -->
+    <script src="https://kit.fontawesome.com/8ce2b457e0.js"></script>
+
+</head>
+<body>
+
+        <section>
+        <!-- Tob Bar Start -->
+            <div class="col-md-12 top-bar">
+                <i class="fas fa-bars menu-trigger"></i>
+                <span class="right">
+                    <a href="#">
+                        <span class="acc-actions">Admin</span>
+                        <i class="fas fa-user-cog"></i>
+                    </a>
+
+                    <a href="#">
+                        <span class="acc-actions">Log out</span>
+                        <i class="fas fa-sign-out-alt"></i>
+                    </a>
+                </span>
+            </div>
+        <!-- Tob Bar End -->
+
+        <!-- Menu Start -->
+        <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4 menu">
+            <ul class="menu-list">
+                <li>
+                    <a href="../index.html">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="#">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Calender</span>
+                    </a>
+                </li>
+                <li class="toggle-triger">
+                    <a href="#">
+                        <i class="fas fa-user-check"></i>
+                        <span>Attendence</span>
+                        <i class="fas fa-caret-left"></i>
+                    </a>
+
+                    <!-- Sub Category Start -->
+                    <ul class="toggled-list">
+                        <li>
+                            <a href="#">
+                                <span>Attendence</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Attendence Report</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- Sub Category End -->
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <span>Teachers</span>
+                        <i class="fas fa-caret-left"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-user-graduate"></i>
+                        <span>Students</span>
+                        <i class="fas fa-caret-left"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-male"></i>
+                        <i class="fas fa-female"></i>
+                        <span>Parents</span>
+                        <i class="fas fa-caret-left"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-users"></i>
+                        <span>Staffs</span>
+                        <i class="fas fa-caret-left"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-chalkboard"></i>
+                        <span>Classes</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-book-open"></i>
+                        <span>Subjects</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-check-square"></i>
+                        <span>Assignments</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-list-alt"></i>
+                        <span>Exam List</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-laptop"></i>
+                        <span>Online Exam</span>
+                   </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-level-up-alt"></i>
+                        <span>Grade Level</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-photo-video"></i>
+                        <span>Library</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-video"></i>
+                        <span>Media Center</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-wallet"></i>
+                        <span>Payments</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-info-circle"></i>
+                        <span>Info</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- Menu End -->
+
+        <!-- Main Content Start -->
+        <div class=" col-lg-1 col-md-1 col-sm-1 col-xs-2"></div>
+
+        <div class="panel col-lg-8 col-md-8 col-sm-7 col-xs-8">
+        <div class="calender-wrap">
+            <div class="cal-left text-center">
+                <span id="date">01</span>
+                <h3 id="day">Saturday</h3>
+                <h4><span id="month">May</span>,<span id="year"> 2019</span></h4>
+            </div>
+            <div class="cal-right">
+                <table>
+
+                    <thead>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                        <th>Sun</th>
+                    </thead>
+
+                    <tbody id="cal-body"></tbody>
+                    
+                    <tfooter></tfooter>
+                </table>
+            </div>
+        </div>
+        </div>
+        
+        <div class="col-lg-1 col-md-1 col-sm-1"></div>
+        <!-- Main Content End -->
+        </section>
+    <!-- jQuery CDN -->
+    <script src="../js/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.toggle-triger').click(function(){
+                $('.toggled-list').toggle(500);
+                $('.fa-caret-left').css({
+                    transform:"rotate(-90deg)"
+                });
+            });
+
+            // Menu Toggle
+
+            $('.menu-trigger').click(function(){
+                $('.menu').slideToggle(1000);
+            });
+        });
+    </script>
+
+    <!-- Calender Control -->
+
+    <script>
+        // Calender Left Side Code
+        var today = new Date();
+        var currentDate = today.getDate();
+        var currentMonth = today.getMonth();
+        var currentYear = today.getFullYear();
+
+        // Days and Months List
+        var days = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+        var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];      
+        
+        // Converting Month's Number into Month's Name
+        var currentDay = days[today.getDay() - 1];
+       
+        // Printing Date/Day/Month/Year
+        document.getElementById('date').innerHTML = currentDate;
+        document.getElementById('day').innerHTML = currentDay;
+        document.getElementById('month').innerHTML = months[today.getMonth()];
+        document.getElementById('year').innerHTML = " " + currentYear;
+
+        // Running Function for Creating Calender Automatically
+        showCalender(currentMonth, currentYear);
+
+        // Calender Structuring
+        function showCalender(month,year)
+        {
+            // Matching Date with Days
+            var firstDay = (new Date(year, month)).getDay() -1;
+
+            // Finding Days in a month
+            var daysInMonth = 32 - new Date(year, month, 32).getDate();
+
+            // Clearing Previous Data from Calender
+            var tbl = document.getElementById("cal-body");
+            tbl.innerHTML = "";
+
+            let date = 1;
+
+            // Creating Week Rows
+            for(var i = 0; i < 6; i++)
+            {
+                var row = document.createElement("tr");
+
+                // Creating Days Cells
+                for(var j = 0; j < 7; j++)
+                {
+                    if(i === 0 && j < firstDay)
+                    {
+                        var cell = document.createElement("td");
+                        var cellText = document.createTextNode("");
+                        cell.appendChild(cellText);
+                        row.appendChild(cell);
+
+                    }
+                    else if(date > daysInMonth)
+                    {
+                        break;
+                    }
+                    else{
+                        var cell = document.createElement("td");
+                        var cellText = document.createTextNode(date);
+
+                        if(date === today.getDate() && month === today.getMonth() && year === today.getFullYear())
+                        {
+                            cell.classList.add("current");
+                        }
+                        cell.appendChild(cellText);
+                        row.appendChild(cell);
+                        date++;
+                    }
+
+                }
+
+                tbl.appendChild(row);
+            }
+        }
+
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>
