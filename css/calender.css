@@ -77,7 +77,7 @@ section{
     margin-left: 10px;
 }
 
-.menu ul.menu-list i[class*="fa-caret"]{
+.menu ul.menu-list i[class*="fa-angle"]{
     float: right;
     margin-top: 5px;
 }
