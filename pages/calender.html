@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SRF School Management System</title>
     
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/calender.css">
@@ -202,20 +202,35 @@
         
         <!-- Main Content End -->
         </section>
-    <!-- jQuery CDN -->
-    <script src="../js/jquery.min.js"></script>
+    
+    <!--   Some Menu Effects   -->
+    
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
 
     <script>
         $(document).ready(function(){
             $('.toggle-triger').click(function(){
                 $('.toggled-list').toggle(500);
-                $('.fa-caret-left').css({
-                    transform:"rotate(-90deg)"
-                });
             });
-
+            $('.drop-down-1').click(function(){
+                $('.drop-down-list-1').toggleClass('angle-rotate');
+            });
+            $('.drop-down-2').click(function(){
+                $('.drop-down-list-2').toggleClass('angle-rotate');
+            });
+            $('.drop-down-3').click(function(){
+                $('.drop-down-list-3').toggleClass('angle-rotate');
+            });
+            $('.drop-down-4').click(function(){
+                $('.drop-down-list-4').toggleClass('angle-rotate');
+            });
+            $('.drop-down-5').click(function(){
+                $('.drop-down-list-5').toggleClass('angle-rotate');
+            });
             // Menu Toggle
-
             $('.menu-trigger').click(function(){
                 $('.menu').slideToggle(1000);
             });
@@ -303,7 +318,7 @@
 
     </script>
 
-    <!-- Bootstrap JS -->
-    <script src="../js/bootstrap.min.js"></script>
+   <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
