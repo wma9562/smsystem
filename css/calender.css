@@ -47,7 +47,7 @@ section{
 
 /* Sidebar Menu */
 .menu-container{
-    padding: 0;
+    padding-left: 0;
 }
 
 .menu{
