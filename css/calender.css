@@ -92,7 +92,7 @@ section{
 }
 
 .angle-rotate{
-    transform: rotate(90deg);
+    transform: rotate(-90deg);
 }
 
 /* Calender */
