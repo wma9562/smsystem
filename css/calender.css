@@ -12,7 +12,6 @@ body{
 section{
     width: 100%;
     height: 100%;
-    /* overflow: scroll; */
 }
 
 
@@ -47,7 +46,7 @@ section{
 
 /* Sidebar Menu */
 .menu-container{
-    padding-left: 0;
+    padding: 0;
 }
 
 .menu{
@@ -98,11 +97,15 @@ section{
 
 /* Calender */
 
+.content-container{
+    padding: 50px;
+}
+
 .panel{
     box-shadow: 0px 0px 5px #8f8f8f;
+    height: 450px;
     padding: 0;
     border-radius: 10px;
-
 }
 
 .calender-wrap div[class*="cal"]{
@@ -152,6 +155,12 @@ section{
     font-size: 16px;
     box-shadow: 0px 0px 1px #8f8f8f;
     -webkit-box-shadow: 0px 0px 1px #8f8f8f;
+}
+
+.calender-wrap .cal-right table td:hover{
+    background: #8f8f8f40;
+    cursor: pointer;
+    color: #333333;
 }
 
 .current{
